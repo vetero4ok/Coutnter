@@ -2,23 +2,16 @@ import React, {useEffect, useState} from 'react';
 import './App.css';
 import {Increments} from './Increments';
 import {InputSettings} from './InputSettings';
-
-
-// type CountsType = {
-//     count: number
-//     maxValue: number
-//     startValue: number
-//
-// }
+import {Display} from './Display';
 
 
 function App() {
+
     const [count, setCount] = useState<number>(0)
     const [maxValue, setMaxValue] = useState(0)
     const [startValue, setStartValue] = useState(0)
 
     function restoreState<T>(key: string, defaultState: T) {
-
         let state = defaultState
         const stateAsString = localStorage.getItem(key)
         if (stateAsString !== null) state = JSON.parse(stateAsString) as T
@@ -36,9 +29,6 @@ function App() {
         localStorage.setItem('maxValue', JSON.stringify(value))
     }
 
-    useEffect(()=>{
-
-    },[])
     function addStartValue(value: number) {
         setStartValue(value)
         localStorage.setItem('startValue', JSON.stringify(value))
@@ -57,25 +47,22 @@ function App() {
         setCount(startValue)
     }
 
+    const numberBold = count === maxValue
     return (
         <div className={'main_block'}>
             <div className={'main'}>
-                <div className={'display'}>
-                    <div className={count === maxValue ? 'text' : ''}>
-                        {count}
-                    </div>
-                </div>
+                <Display
+                    count={count}
+                    numberBold={numberBold}
+                />
+                <Increments
+                    addInc={addInc}
+                    resetCounts={resetCounts}
+                    count={count}
+                    maxValue={maxValue}
+                    startValue={startValue}
 
-                <div className={'keyboard'}>
-                    <Increments
-                        addInc={addInc}
-                        resetCounts={resetCounts}
-                        count={count}
-                        maxValue={maxValue}
-                        startValue={startValue}
-
-                    />
-                </div>
+                />
 
             </div>
             <div className={'main'}>
@@ -83,7 +70,12 @@ function App() {
                     max value <InputSettings value={maxValue} setValueSettings={addMaxValue}/>
                     start value <InputSettings value={startValue} setValueSettings={addStartValue}/>
                 </div>
-                <button>set</button>
+                {/*<Button*/}
+                {/*    title={'Reset'}*/}
+                {/*    value={count}*/}
+                {/*    addItem={()=>{}}*/}
+                {/*    disabled={}*/}
+                {/*/>*/}
             </div>
         </div>
 

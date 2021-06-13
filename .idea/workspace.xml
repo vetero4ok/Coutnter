@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Display.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
@@ -54,8 +55,16 @@
       <workItem from="1623571953873" duration="14000" />
       <workItem from="1623572007058" duration="76000" />
       <workItem from="1623572225931" duration="283000" />
-      <workItem from="1623572522614" duration="7659000" />
+      <workItem from="1623572522614" duration="17929000" />
     </task>
+    <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
+      <created>1623580619867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623580619867</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -71,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add localstorage for project, but do not work correct(need fix maxValue and startValue)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add localstorage for project, but do not work correct(need fix maxValue and startValue)" />
   </component>
 </project>

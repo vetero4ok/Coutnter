@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React, {ChangeEvent, KeyboardEvent, useEffect, useState} from 'react';
 
 type  InputSettingsProps = {
     value: number
@@ -6,8 +6,12 @@ type  InputSettingsProps = {
 }
 
 export const InputSettings = (props: InputSettingsProps) => {
-
     const [value, setValue] = useState<number>(props.value)
+
+    useEffect(() => {
+        setValue(props.value)
+    }, [props.value])
+
     const onKeyPressEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             setValue(value)
@@ -15,12 +19,11 @@ export const InputSettings = (props: InputSettingsProps) => {
         }
     }
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        let value = e.currentTarget.value
-        let number = JSON.parse(value)
+        let string = e.currentTarget.value
+        let number = JSON.parse(string)
         setValue(number)
 
     }
-
 
     return (
         <input
@@ -29,8 +32,6 @@ export const InputSettings = (props: InputSettingsProps) => {
             className={'input'}
             onKeyPress={onKeyPressEnter}
             onChange={onChangeHandler}
-
-
         />
     );
 }
