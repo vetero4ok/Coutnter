@@ -1,0 +1,45 @@
+.main_block {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.main {
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    border: 2px solid blue;
+    border-radius: 8px;
+    background: #121278;
+
+}
+
+.display {
+
+    margin: 10px;
+    background: #c1c1dc;
+    border-radius: 8px;
+    border: 2px solid blue;
+    text-align: center;
+    width: 130px;
+    height: 60px;
+    font-size: 40px;
+}
+
+.keyboard {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px;
+
+
+}
+.input{
+    width: 40px;
+}
+
+.text {
+
+    color: red;
+}
