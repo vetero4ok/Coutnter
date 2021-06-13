@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Display.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Settings.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Increments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Increments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InputSettings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputSettings.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +15,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1tsxzRIqrpkd7z5GMMQDIqvUUkW" />
   <component name="ProjectViewState">
@@ -55,7 +55,8 @@
       <workItem from="1623571953873" duration="14000" />
       <workItem from="1623572007058" duration="76000" />
       <workItem from="1623572225931" duration="283000" />
-      <workItem from="1623572522614" duration="17929000" />
+      <workItem from="1623572522614" duration="22784000" />
+      <workItem from="1623597635027" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -64,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623580619867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed localstorage and disabled button(inc and res)">
+      <created>1623592227014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623592227014</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,9 +88,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add localstorage for project, but do not work correct(need fix maxValue and startValue)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add localstorage for project, but do not work correct(need fix maxValue and startValue)" />
+    <MESSAGE value="fixed localstorage and disabled button(inc and res)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed localstorage and disabled button(inc and res)" />
   </component>
 </project>

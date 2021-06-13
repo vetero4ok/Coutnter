@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import {Increments} from './Increments';
-import {InputSettings} from './InputSettings';
 import {Display} from './Display';
+import {Settings} from './Settings';
 
 
 function App() {
@@ -35,6 +35,15 @@ function App() {
         setCount(value)
     }
 
+    // function setValues(valueStart:number,valueMax:number) {
+    //     setMaxValue(valueMax)
+    //     localStorage.setItem('maxValue', JSON.stringify(valueMax))
+    //     setStartValue(valueStart)
+    //     localStorage.setItem('startValue', JSON.stringify(valueStart))
+    //
+    //
+    // }
+
     useEffect(() => {
         localStorage.setItem('count', JSON.stringify(count))
     }, [count])
@@ -65,18 +74,14 @@ function App() {
                 />
 
             </div>
-            <div className={'main'}>
-                <div>
-                    max value <InputSettings value={maxValue} setValueSettings={addMaxValue}/>
-                    start value <InputSettings value={startValue} setValueSettings={addStartValue}/>
-                </div>
-                {/*<Button*/}
-                {/*    title={'Reset'}*/}
-                {/*    value={count}*/}
-                {/*    addItem={()=>{}}*/}
-                {/*    disabled={}*/}
-                {/*/>*/}
-            </div>
+            <Settings
+                startValue={startValue}
+                maxValue={maxValue}
+                addMaxValue={addMaxValue}
+                addStartValue={addStartValue}
+                // setValues={setValues}
+
+            />
         </div>
 
 
