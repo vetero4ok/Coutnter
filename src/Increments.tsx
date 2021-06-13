@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 type propsIncCountsType = {
     resetCounts: () => void
     addInc: (count: number) => void
@@ -13,6 +14,10 @@ export function Increments(props: propsIncCountsType) {
     const Reset = () => props.resetCounts()
     return (
         <div>
+            {/*<Button*/}
+            {/*    value={props.count}*/}
+            {/*    addItem={}*/}
+            {/*/>*/}
             <button onClick={Increments}
                     disabled={props.count >= props.maxValue}>inc
             </button>

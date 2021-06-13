@@ -2,7 +2,7 @@
 
     display: flex;
     justify-content: center;
-
+    color: white;
 
 }
 
@@ -35,7 +35,8 @@
 
 
 }
-.input{
+
+.input {
     width: 40px;
 }
 
