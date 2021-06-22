@@ -14,11 +14,11 @@ export function Increments(props: propsIncCountsType) {
     const Increments = () => {
         props.addInc(props.count)
     }
-    const disabledInc = props.count >= props.maxValue
-    const disabledReset = props.count === props.startValue
+    const disabledInc = props.count >= props.maxValue || props.startValue > props.maxValue
+    const disabledReset = props.count === props.startValue|| props.startValue > props.maxValue
 
     return (
-        <div >
+        <div className={"settings-buttons"}>
             <Button
                 title={'Inc'}
                 addItem={Increments}

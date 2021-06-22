@@ -5,6 +5,7 @@ type PropsSettingsType = {
     value: number
     title: string
     addValue: (value: number) => void
+
 }
 
 export const Settings = (props: PropsSettingsType) => {
@@ -19,6 +20,7 @@ export const Settings = (props: PropsSettingsType) => {
             <InputSettings
                 value={props.value}
                 setValueSettings={props.addValue}
+
             />
         </div>
 
