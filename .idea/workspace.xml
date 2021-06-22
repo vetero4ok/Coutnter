@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Increments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Increments.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +43,34 @@
       <recent name="E:\Dropbox\progect\progect_incubator\Coutnter\src" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.deploy">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.predeploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +93,7 @@
       <workItem from="1623944849135" duration="18000" />
       <workItem from="1624174301256" duration="681000" />
       <workItem from="1624187392864" duration="3361000" />
-      <workItem from="1624286751876" duration="23215000" />
+      <workItem from="1624286751876" duration="23860000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -100,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624358585450</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working but need fix a couple of bugs">
+      <created>1624363956754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624363956754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +154,7 @@
     <MESSAGE value="A add Settings component and button set (need fixed logic callback for button set)" />
     <MESSAGE value="fixed logic" />
     <MESSAGE value="fixed logic(need add Errors)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed logic(need add Errors)" />
+    <MESSAGE value="working but need fix a couple of bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="working but need fix a couple of bugs" />
   </component>
 </project>
