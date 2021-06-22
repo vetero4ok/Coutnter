@@ -18,7 +18,7 @@ export function Increments(props: propsIncCountsType) {
     const disabledReset = props.count === props.startValue
 
     return (
-        <div className={'keyboard'}>
+        <div >
             <Button
                 title={'Inc'}
                 addItem={Increments}

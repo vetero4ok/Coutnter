@@ -3,6 +3,7 @@ import './App.css';
 import {Increments} from './Increments';
 import {Display} from './Display';
 import {Settings} from './Settings';
+import {Button} from './Button';
 
 
 function App() {
@@ -23,30 +24,23 @@ function App() {
         setMaxValue(restoreState<number>('maxValue', 0))
         setStartValue(restoreState<number>('startValue', 0))
     }, [])
+    useEffect(() => {
+        localStorage.setItem('maxValue', JSON.stringify(maxValue))
+    }, [maxValue])
+    useEffect(() => {
+        localStorage.setItem('startValue', JSON.stringify(startValue))
+    }, [startValue])
+    useEffect(() => {
+        localStorage.setItem('count', JSON.stringify(count))
+    }, [count])
 
     function addMaxValue(value: number) {
         setMaxValue(value)
-        localStorage.setItem('maxValue', JSON.stringify(value))
     }
 
     function addStartValue(value: number) {
         setStartValue(value)
-        localStorage.setItem('startValue', JSON.stringify(value))
-        setCount(value)
     }
-
-    // function setValues(valueStart:number,valueMax:number) {
-    //     setMaxValue(valueMax)
-    //     localStorage.setItem('maxValue', JSON.stringify(valueMax))
-    //     setStartValue(valueStart)
-    //     localStorage.setItem('startValue', JSON.stringify(valueStart))
-    //
-    //
-    // }
-
-    useEffect(() => {
-        localStorage.setItem('count', JSON.stringify(count))
-    }, [count])
 
     function addInc(count: number) {
         setCount(count + 1)
@@ -56,32 +50,54 @@ function App() {
         setCount(startValue)
     }
 
+    const setCounterToStart = () => {
+        setCount(startValue)
+    }
+    const DisabledSet = maxValue === startValue
     const numberBold = count === maxValue
     return (
-        <div className={'main_block'}>
-            <div className={'main'}>
-                <Display
-                    count={count}
-                    numberBold={numberBold}
-                />
-                <Increments
-                    addInc={addInc}
-                    resetCounts={resetCounts}
-                    count={count}
-                    maxValue={maxValue}
-                    startValue={startValue}
+        <div className={'app'}>
+            <div className={'counter-wrapper'}>
+                <div className={'display'}>
+                    <Display
+                        count={count}
+                        numberBold={numberBold}
+                    />
+                </div>
+                <div className={'display-buttons'}>
+                    <Increments
+                        addInc={addInc}
+                        resetCounts={resetCounts}
+                        count={count}
+                        maxValue={maxValue}
+                        startValue={startValue}
 
-                />
+                    />
+                </div>
 
             </div>
-            <Settings
-                startValue={startValue}
-                maxValue={maxValue}
-                addMaxValue={addMaxValue}
-                addStartValue={addStartValue}
-                // setValues={setValues}
+            <div className={'settings-wrapper'}>
+                <div className="settings-displays">
+                    <Settings
+                        value={startValue}
+                        addValue={addStartValue}
+                        title={'start value:'}
+                    />
+                    <Settings
+                        value={maxValue}
+                        addValue={addMaxValue}
+                        title={'max value:'}
+                    />
+                </div>
+                <div className="settings-buttons">
+                    <Button
+                        title={'Set'}
+                        addItem={setCounterToStart}
+                        disabled={DisabledSet}
+                    />
+                </div>
+            </div>
 
-            />
         </div>
 
 

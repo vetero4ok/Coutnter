@@ -7,10 +7,10 @@ type PropsDisplayProps = {
 
 export const Display = (props:PropsDisplayProps) => {
     return(
-        <div className={'display'}>
+
             <div className={props.numberBold? 'text' : ''}>
                 {props.count}
             </div>
-        </div>
+
     );
 }

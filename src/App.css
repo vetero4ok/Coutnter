@@ -1,46 +1,74 @@
-.main_block {
-
+.app {
+    background-color: rgba(118, 118, 118, 0.24);
+    height: 100vh;
     display: flex;
     justify-content: center;
-    color: white;
+    align-items: center;
+}
+
+.counter-wrapper {
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: center;
 
 }
 
-.main {
-    margin: 50px;
-    width: 150px;
+.settings-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
     height: 150px;
-    border: 2px solid blue;
-    border-radius: 8px;
-    background: #121278;
+}
 
+
+.settings-displays {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.settings-buttons {
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .display {
-
-    margin: 10px;
-    background: #c1c1dc;
-    border-radius: 8px;
-    border: 2px solid blue;
-    text-align: center;
-    width: 130px;
-    height: 60px;
-    font-size: 40px;
-}
-
-.keyboard {
     display: flex;
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
     justify-content: space-around;
-    border-radius: 8px;
-
-
 }
 
-.input {
-    width: 40px;
+.display-buttons {
+
+    border: 3px solid deepskyblue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
-
-.text {
-
-    color: red;
+.title {
+    margin: 10px;
+    align-content: space-around;
+    justify-content: space-around;
 }

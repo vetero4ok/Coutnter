@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Settings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Buttons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Increments.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Increments.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InputSettings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/InputSettings.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Settings.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,14 +22,12 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1tsxzRIqrpkd7z5GMMQDIqvUUkW" />
   <component name="ProjectViewState">
@@ -34,6 +38,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../counter-master" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="E:\Dropbox\progect\progect_incubator\Coutnter\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -56,7 +62,16 @@
       <workItem from="1623572007058" duration="76000" />
       <workItem from="1623572225931" duration="283000" />
       <workItem from="1623572522614" duration="22784000" />
-      <workItem from="1623597635027" duration="812000" />
+      <workItem from="1623597635027" duration="6202000" />
+      <workItem from="1623763031596" duration="2140000" />
+      <workItem from="1623777654302" duration="599000" />
+      <workItem from="1623829660073" duration="842000" />
+      <workItem from="1623918610320" duration="18000" />
+      <workItem from="1623942131213" duration="2647000" />
+      <workItem from="1623944849135" duration="18000" />
+      <workItem from="1624174301256" duration="681000" />
+      <workItem from="1624187392864" duration="3361000" />
+      <workItem from="1624286751876" duration="17805000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -72,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623592227014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="A add Settings component and button set (need fixed logic callback for button set)">
+      <created>1623598773714</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623598773714</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add localstorage for project, but do not work correct(need fix maxValue and startValue)" />
     <MESSAGE value="fixed localstorage and disabled button(inc and res)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed localstorage and disabled button(inc and res)" />
+    <MESSAGE value="A add Settings component and button set (need fixed logic callback for button set)" />
+    <option name="LAST_COMMIT_MESSAGE" value="A add Settings component and button set (need fixed logic callback for button set)" />
   </component>
 </project>
