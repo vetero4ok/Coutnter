@@ -9,8 +9,8 @@ type PropsDisplayProps = {
 export const Display = (props: PropsDisplayProps) => {
     return (
 
-        <div className={(props.numberBold ? 'text' : '')||(props.title? 'info':'')}>
-            {props.count}
+        <div className={props.title? 'info':''}>
+           <div className={props.numberBold ? 'text' : ''} > {props.count}</div>
             {props.title}
         </div>
 

@@ -11,7 +11,8 @@ function App() {
     const [count, setCount] = useState<number>(0)
     const [maxValue, setMaxValue] = useState(0)
     const [startValue, setStartValue] = useState(0)
-  //  const [error,setError] = useState<boolean>(false)
+
+    //  const [error,setError] = useState<boolean>(false)
     function restoreState<T>(key: string, defaultState: T) {
         let state = defaultState
         const stateAsString = localStorage.getItem(key)
@@ -48,14 +49,16 @@ function App() {
 
     function resetCounts() {
         setCount(startValue)
+
     }
 
     const setCounterToStart = () => {
         setCount(startValue)
     }
-    //const DisabledSet = maxValue === startValue
+    const disabledSet = startValue >= maxValue
     const numberBold = count === maxValue
-    const errorMassage = startValue <= maxValue
+    const errorMassage = startValue < maxValue
+
     return (
         <div className={'app'}>
             <div className={'counter-wrapper'}>
@@ -65,7 +68,7 @@ function App() {
                             count={count}
                             numberBold={numberBold}
                         />
-                        :<Display
+                        : <Display
                             title={'max value can not be less or equal to min value'}
                             numberBold={numberBold}
                         />
@@ -96,11 +99,11 @@ function App() {
                         title={'max value:'}
                     />
                 </div>
-                <div className={"settings-buttons"}>
+                <div className={'settings-buttons'}>
                     <Button
                         title={'Set'}
                         addItem={setCounterToStart}
-                        //disabled={DisabledSet}
+                        disabled={disabledSet}
                     />
                 </div>
             </div>
