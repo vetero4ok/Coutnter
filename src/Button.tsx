@@ -11,9 +11,6 @@ type PropsButtonType = {
 export const Button = (props: PropsButtonType) => {
     const Items = () => props.addItem(props.value)
     return (
-        <div className={'buttons'}>
-            <button onClick={Items} disabled={props.disabled}>{props.title} </button>
-        </div>
-
+        <button   onClick={Items} disabled={props.disabled}>{props.title} </button>
     );
 }

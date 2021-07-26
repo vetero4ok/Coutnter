@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="">
+    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="deployed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buttons.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,14 @@
       <workItem from="1623944849135" duration="18000" />
       <workItem from="1624174301256" duration="681000" />
       <workItem from="1624187392864" duration="3361000" />
-      <workItem from="1624286751876" duration="23860000" />
+      <workItem from="1624286751876" duration="24227000" />
+      <workItem from="1625215568901" duration="46000" />
+      <workItem from="1625216441962" duration="3000" />
+      <workItem from="1626163679041" duration="697000" />
+      <workItem from="1626714724876" duration="42000" />
+      <workItem from="1627238135074" duration="741000" />
+      <workItem from="1627239193450" duration="20000" />
+      <workItem from="1627280025661" duration="3975000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -130,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624363956754</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="deployed">
+      <created>1624364750461</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1624364750461</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +171,7 @@
     <MESSAGE value="fixed logic" />
     <MESSAGE value="fixed logic(need add Errors)" />
     <MESSAGE value="working but need fix a couple of bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="working but need fix a couple of bugs" />
+    <MESSAGE value="deployed" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployed" />
   </component>
 </project>
