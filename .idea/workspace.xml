@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="fix logic disabledSet display bugs">
+    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="fix logic displays and increments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Display.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Display.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../counter-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Button" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="E:\Dropbox\progect\progect_incubator\Coutnter\node_modules\typescript\lib" />
@@ -41,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dropbox\progect\progect_incubator\Coutnter\src\Button" />
       <recent name="E:\Dropbox\progect\progect_incubator\Coutnter\src" />
     </key>
   </component>
@@ -101,7 +99,7 @@
       <workItem from="1626714724876" duration="42000" />
       <workItem from="1627238135074" duration="741000" />
       <workItem from="1627239193450" duration="20000" />
-      <workItem from="1627280025661" duration="11070000" />
+      <workItem from="1627280025661" duration="11782000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -159,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627286804762</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix logic displays and increments">
+      <created>1627291852818</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627291852818</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +192,7 @@
     <MESSAGE value="deployed" />
     <MESSAGE value="css fixed minimaly" />
     <MESSAGE value="fix logic disabledSet display bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix logic disabledSet display bugs" />
+    <MESSAGE value="fix logic displays and increments" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix logic displays and increments" />
   </component>
 </project>
