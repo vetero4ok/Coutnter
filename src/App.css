@@ -59,7 +59,7 @@
     height: 100%;
     width: 100%;
     justify-content: space-around;
-    font-size: 60px;
+
 }
 
 .title {
@@ -68,15 +68,20 @@
     justify-content: space-around;
 }
 
+/*.count {*/
+/*    font-size: 60px;*/
+/*}*/
 .text {
     color: #ff3636;
-    font-size: 60px;
-    font-weight: bold;
+      font-weight: bold;
 }
 .info{
     text-align: center;
-    font-size: 18px;
-    color: #ff3636;
+}
+.massageErrorRed {
+    color: red;
+    text-align: center;
+
 }
 button {
 

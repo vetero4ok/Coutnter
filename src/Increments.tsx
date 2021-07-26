@@ -8,14 +8,15 @@ type propsIncCountsType = {
     count: number
     startValue: number
     maxValue: number
+    error:boolean
 }
 
 export function Increments(props: propsIncCountsType) {
     const Increments = () => {
         props.addInc(props.count)
     }
-    const disabledInc = props.count >= props.maxValue || props.startValue > props.maxValue
-    const disabledReset = props.count === props.startValue|| props.startValue > props.maxValue
+    const disabledInc = props.count >= props.maxValue ||props.error
+    const disabledReset = props.count === props.startValue|| props.error
 
     return (
         <div className={"settings-buttons"}>

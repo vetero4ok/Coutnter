@@ -12,7 +12,8 @@ function App() {
     const [maxValue, setMaxValue] = useState(0)
     const [startValue, setStartValue] = useState(0)
 
-    //  const [error,setError] = useState<boolean>(false)
+    const [error, setError] = useState<boolean>(false)
+
     function restoreState<T>(key: string, defaultState: T) {
         let state = defaultState
         const stateAsString = localStorage.getItem(key)
@@ -37,10 +38,12 @@ function App() {
 
     function addMaxValue(value: number) {
         setMaxValue(value)
+        setError(true)
     }
 
     function addStartValue(value: number) {
         setStartValue(value)
+        setError(true)
     }
 
     function addInc(count: number) {
@@ -49,30 +52,28 @@ function App() {
 
     function resetCounts() {
         setCount(startValue)
-
     }
 
     const setCounterToStart = () => {
         setCount(startValue)
+        setError(false)
     }
-    const disabledSet = startValue >= maxValue
-    const numberBold = count === maxValue
-    const errorMassage = startValue < maxValue
+
+
 
     return (
         <div className={'app'}>
             <div className={'counter-wrapper'}>
                 <div className={'display'}>
-                    {errorMassage
-                        ? <Display
-                            count={count}
-                            numberBold={numberBold}
-                        />
-                        : <Display
-                            title={'max value can not be less or equal to min value'}
-                            numberBold={numberBold}
-                        />
-                    }
+
+                    <Display
+                        count={count}
+                        maxValue={maxValue}
+                        startValue={startValue}
+                        error={error}
+                    />
+
+
                 </div>
                 <div className={'display-buttons'}>
                     <Increments
@@ -81,6 +82,8 @@ function App() {
                         count={count}
                         maxValue={maxValue}
                         startValue={startValue}
+                        error={error}
+
 
                     />
                 </div>
@@ -103,7 +106,7 @@ function App() {
                     <Button
                         title={'Set'}
                         addItem={setCounterToStart}
-                        disabled={disabledSet}
+                        disabled={startValue >= maxValue}
                     />
                 </div>
             </div>
