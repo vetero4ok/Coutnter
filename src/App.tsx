@@ -21,12 +21,6 @@ function App() {
         useSelector<AppStateType, InitialStateType>(state => state.counter)
     const dispatch = useDispatch()
 
-    // const [count, setCount] = useState<number>(0)
-    // const [maxValue, setMaxValue] = useState(0)
-    // const [startValue, setStartValue] = useState(0)
-    //
-    // const [error, setError] = useState<boolean>(false)
-    //
     // function restoreState<T>(key: string, defaultState: T) {
     //     let state = defaultState
     //     const stateAsString = localStorage.getItem(key)

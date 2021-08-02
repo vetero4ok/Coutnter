@@ -5,8 +5,6 @@ export enum ACTION_TYPE {
     SET_ERROR = 'Counter/SET-ERROR',
     SET_COUNTS = 'Counter/SET-COUNTS',
 
-
-
 }
 
 const InitialState = {
