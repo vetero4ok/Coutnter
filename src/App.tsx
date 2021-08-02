@@ -1,64 +1,77 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import './App.css';
 import {Increments} from './Increments';
 import {Display} from './Display';
 import {Settings} from './Settings';
 import {Button} from './Button';
+import {useDispatch, useSelector} from 'react-redux';
+import {AppStateType} from './Redux/store';
+import {
+    incCountAC,
+    InitialStateType,
+    setCountsAC,
+    setErrorAC,
+    setMaxValueAC,
+    setStartValueAC
+} from './Redux/counter-reducer';
 
 
 function App() {
+    const {count, maxValue, startValue, error} =
+        useSelector<AppStateType, InitialStateType>(state => state.counter)
+    const dispatch = useDispatch()
 
-    const [count, setCount] = useState<number>(0)
-    const [maxValue, setMaxValue] = useState(0)
-    const [startValue, setStartValue] = useState(0)
-
-    const [error, setError] = useState<boolean>(false)
-
-    function restoreState<T>(key: string, defaultState: T) {
-        let state = defaultState
-        const stateAsString = localStorage.getItem(key)
-        if (stateAsString !== null) state = JSON.parse(stateAsString) as T
-        return state
-    }
-
-    useEffect(() => {
-        setCount(restoreState<number>('count', 0))
-        setMaxValue(restoreState<number>('maxValue', 0))
-        setStartValue(restoreState<number>('startValue', 0))
-    }, [])
-    useEffect(() => {
-        localStorage.setItem('maxValue', JSON.stringify(maxValue))
-    }, [maxValue])
-    useEffect(() => {
-        localStorage.setItem('startValue', JSON.stringify(startValue))
-    }, [startValue])
-    useEffect(() => {
-        localStorage.setItem('count', JSON.stringify(count))
-    }, [count])
+    // const [count, setCount] = useState<number>(0)
+    // const [maxValue, setMaxValue] = useState(0)
+    // const [startValue, setStartValue] = useState(0)
+    //
+    // const [error, setError] = useState<boolean>(false)
+    //
+    // function restoreState<T>(key: string, defaultState: T) {
+    //     let state = defaultState
+    //     const stateAsString = localStorage.getItem(key)
+    //     if (stateAsString !== null) state = JSON.parse(stateAsString) as T
+    //     return state
+    // }
+    //
+    // useEffect(() => {
+    //     setCount(restoreState<number>('count', 0))
+    //     setMaxValue(restoreState<number>('maxValue', 0))
+    //     setStartValue(restoreState<number>('startValue', 0))
+    // }, [])
+    // useEffect(() => {
+    //     localStorage.setItem('maxValue', JSON.stringify(maxValue))
+    // }, [maxValue])
+    // useEffect(() => {
+    //     localStorage.setItem('startValue', JSON.stringify(startValue))
+    // }, [startValue])
+    // useEffect(() => {
+    //     localStorage.setItem('count', JSON.stringify(count))
+    // }, [count])
 
     function addMaxValue(value: number) {
-        setMaxValue(value)
-        setError(true)
+        dispatch(setMaxValueAC(value))
+        dispatch(setErrorAC(true))
+
     }
 
     function addStartValue(value: number) {
-        setStartValue(value)
-        setError(true)
+        dispatch(setStartValueAC(value))
+        dispatch(setErrorAC(true))
     }
 
-    function addInc(count: number) {
-        setCount(count + 1)
+    function addInc() {
+        dispatch(incCountAC())
     }
 
     function resetCounts() {
-        setCount(startValue)
+        dispatch(setCountsAC(startValue))
     }
 
     const setCounterToStart = () => {
-        setCount(startValue)
-        setError(false)
-    }
-
+        dispatch(setCountsAC(startValue))
+        dispatch(setErrorAC(false))
+      }
 
 
     return (

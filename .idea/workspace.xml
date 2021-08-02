@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="fix logic displays and increments">
+    <list default="true" id="fe953a9c-17b9-4494-bb40-9aff05311662" name="Default Changelist" comment="deployed">
+      <change afterPath="$PROJECT_DIR$/src/Redux/counter-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -30,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../s_network/mynetwork" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="E:\Dropbox\progect\progect_incubator\Coutnter\node_modules\typescript\lib" />
@@ -99,7 +105,10 @@
       <workItem from="1626714724876" duration="42000" />
       <workItem from="1627238135074" duration="741000" />
       <workItem from="1627239193450" duration="20000" />
-      <workItem from="1627280025661" duration="11782000" />
+      <workItem from="1627280025661" duration="11933000" />
+      <workItem from="1627841358383" duration="1573000" />
+      <workItem from="1627843091462" duration="385000" />
+      <workItem from="1627884789294" duration="8135000" />
     </task>
     <task id="LOCAL-00001" summary="add localstorage for project, but do not work correct(need fix maxValue and startValue)">
       <created>1623580619867</created>
@@ -164,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627291852818</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="deployed">
+      <created>1627292249736</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627292249736</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,10 +205,10 @@
     <MESSAGE value="fixed logic" />
     <MESSAGE value="fixed logic(need add Errors)" />
     <MESSAGE value="working but need fix a couple of bugs" />
-    <MESSAGE value="deployed" />
     <MESSAGE value="css fixed minimaly" />
     <MESSAGE value="fix logic disabledSet display bugs" />
     <MESSAGE value="fix logic displays and increments" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix logic displays and increments" />
+    <MESSAGE value="deployed" />
+    <option name="LAST_COMMIT_MESSAGE" value="deployed" />
   </component>
 </project>
