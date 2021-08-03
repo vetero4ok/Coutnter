@@ -1,28 +1,37 @@
-import React from 'react';
 import {InputSettings} from './InputSettings';
+import {ButtonComponent} from './ButtonComponent';
+import React from 'react';
 
-type PropsSettingsType = {
-    value: number
-    title: string
-    addValue: (value: number) => void
-
+type SettingsPropsType = {
+    maxValue: number
+    startValue: number
+    addMaxValue: (value: number) => void
+    setCounterToStart: () => void
+    addStartValue: (value: number) => void
 }
 
-export const Settings = (props: PropsSettingsType) => {
-
+export const Settings = (props: SettingsPropsType) => {
     return (
-
-        <div className={'settingsDisplay'}>
-            <span className={'title'}>
-                {props.title}
-            </span>
-
-            <InputSettings
-                value={props.value}
-                setValueSettings={props.addValue}
-
-            />
+        <div className={'settings-wrapper'}>
+            <div className={'settings-displays'}>
+                <InputSettings
+                    value={props.startValue}
+                    addValue={props.addStartValue}
+                    title={'start value:'}
+                />
+                <InputSettings
+                    value={props.maxValue}
+                    addValue={props.addMaxValue}
+                    title={'max value:'}
+                />
+            </div>
+            <div className={'settings-buttons'}>
+                <ButtonComponent
+                    title={'Set'}
+                    addItem={props.setCounterToStart}
+                    disabled={props.startValue >= props.maxValue}
+                />
+            </div>
         </div>
-
     );
 }

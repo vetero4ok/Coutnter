@@ -1,34 +1,24 @@
-import React, {ChangeEvent, KeyboardEvent} from 'react';
+import React from 'react';
+import {InputComponents} from './InputComponents';
 
-type  InputSettingsProps = {
+type InputSettingsPropsType = {
     value: number
-    setValueSettings: (value: number) => void
+    title: string
+    addValue: (value: number) => void
+
 }
 
-export const InputSettings = (props: InputSettingsProps) => {
+export const InputSettings = (props: InputSettingsPropsType) => {
 
-
-    const onKeyPressEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter') {
-            props.setValueSettings(+e.currentTarget.value)
-        }
-    }
-    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        let string = e.currentTarget.value
-        let number = JSON.parse(string)
-        props.setValueSettings(number)
-    }
     return (
-        <span className="input-container">
-            <input
-                type="number"
-                min="0" max="100"
+        <div className={'settingsDisplay'}>
+            <span className={'title'}>
+                {props.title}
+            </span>
+            <InputComponents
                 value={props.value}
-                className={'input'}
-                onKeyPress={onKeyPressEnter}
-                onChange={onChangeHandler}
+                setValueSettings={props.addValue}
             />
-        </span>
-
+        </div>
     );
 }

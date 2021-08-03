@@ -5,7 +5,6 @@
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-
 }
 
 .counter-wrapper {
@@ -16,7 +15,6 @@
     height: 180px;
     display: flex;
     flex-direction: column;
-
 }
 
 .settings-wrapper {
@@ -27,9 +25,7 @@
     padding: 20px;
     width: 200px;
     height: 180px;
-
 }
-
 
 .settings-displays {
     display: flex;
@@ -59,7 +55,7 @@
     height: 100%;
     width: 100%;
     justify-content: space-around;
-
+    text-align: center;
 }
 
 .title {
@@ -68,23 +64,21 @@
     justify-content: space-around;
 }
 
-/*.count {*/
-/*    font-size: 60px;*/
-/*}*/
 .text {
     color: #ff3636;
-      font-weight: bold;
+    font-weight: bold;
 }
-.info{
+
+.massageBlackColor {
     text-align: center;
 }
+
 .massageErrorRed {
     color: red;
     text-align: center;
-
 }
-button {
 
+button {
     height: 40px;
     width: 60px;
     border: 3px solid deepskyblue;

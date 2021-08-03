@@ -7,15 +7,15 @@ export enum ACTION_TYPE {
 
 }
 
-const InitialState = {
+const initialState = {
     count: 0,
     maxValue: 0,
     startValue: 0,
     error: false,
 }
-export type InitialStateType = typeof InitialState
+export type InitialStateType = typeof initialState
 
-export const counterReducer = (state: InitialStateType = InitialState, action: ActionType): InitialStateType => {
+export const counterReducer = (state: InitialStateType = initialState, action: ActionType): InitialStateType => {
     switch (action.type) {
         case ACTION_TYPE.INC_COUNT_ACTION:
             return {
